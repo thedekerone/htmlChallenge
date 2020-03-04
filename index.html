@@ -7,24 +7,30 @@
   </head>
 
   <body>
+
+    <div class="container">
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id ="description">Thank you for taking the time to help us improve the platform</p>
+    <p id ="description"><em>Thank you for taking the time to help us improve the platform</em> </p>
     <form id ="survey-form">
       <label id="name-label">
         Name:
+        <br>
         <input id="name" required type="text" placeholder="Enter your name">
       </label>
       <label id="email-label">
         Email:
+        <br>
         <input id="email" required type="email" placeholder="Enter your email">
       </label>
       <label id="number-label">
         Age (optional):
+        <br>
         <input id="number" min="0" max="120" type="number" placeholder="Enter your Age">
       </label>
 
       <label>
-        Which option best describes your current role?
+        <h3> Which option best describes your current role?</h3>
+        <br>
         <select id="dropdown">
           <option value="Select current role" disabled selected>Select current role</option>
           <option value="Student">Student</option>
@@ -35,64 +41,73 @@
         </select>
       </label>
 
-      <label>
-        Would you recommend freeCodeCamp to a friend?
+     <label   >
+        <h3>Would you recommend freeCodeCamp to a friend?</h3> 
+        <br>
         <input name="recommendation" type="radio" value="Definitely">Definitely</input>
-        <input name="recommendation" type="radio" value="Maybe">Maybe</input>
-        <input name="recommendation" type="radio" value="Not sure">Not sure</input>
+        <input  name="recommendation" type="radio" value="Maybe">Maybe</input>
+        <input  name="recommendation" type="radio" value="Not sure">Not sure</input>
       </label>
-        <p>
+        <h3 style="margin-bottom: 15px;">
           What would you like to see improved? (Check all that apply)
+          <br>
 
-        </p>
-      <label>
-        Front-end Projects
+        </h3>
+      <label class="box">
         <input type="checkbox" name="Front-end Projects" value="Front-end Projects">
+        Front-end Projects
       </label>
-      <label>
-        Back-end Projects
+      <label class="box">
         <input type="checkbox" name="Back-end Projects" value="Back-end Projects">
+        Back-end Projects
       </label>
-      <label>
-        Data visualization
+      <label class="box">
         <input type="checkbox" name="Data visualization" value="Data visualization">
+        Data visualization
       </label>
-      <label>
-       Challenges
+      <label class="box">
         <input type="checkbox" name="Challenges" value="Challenges">
+       Challenges
       </label>
-      <label>
+      <label class="box">
+        <input type="checkbox" name="Open source community" value="Open source community">
         Open source community
-         <input type="checkbox" name="Open source community" value="Open source community">
        </label>
-       <label>
-        Gitter help rooms
+       <label class="box">
          <input type="checkbox" name="Gitter help rooms" value="Gitter help rooms">
+        Gitter help rooms
+        
        </label>
-       <label>
-        Videos
+       <label class="box">
          <input type="checkbox" name="Videos" value="Videos">
+         Videos
+        
        </label>
-       <label>
-        City Meetups
+       <label class="box">
          <input type="checkbox" name="City Meetups" value="City Meetups">
+        City Meetups
+        
        </label>
-       <label>
-        Wiki
+       <label class="box">
          <input type="checkbox" name="Wiki" value="Wiki">
+        Wiki
+        
        </label>
-       <label>
-        Forum
+       <label class="box">
          <input type="checkbox" name="Forum" value="Forum">
+        Forum
+        
        </label>
-       <label>
-        Additional Courses
-
+       <label class="box">
          <input type="checkbox" name="Additional Courses" value="Additional Courses">
+        Additional Courses
+        
+
        </label>
       <label>
         Any comments or suggestions?
-        <textarea name="text-area" id="text-area" cols="30" rows="10">
+        <br>
+        <textarea placeholder="Enter your comment here..." name="comment" id="text-area">
 
         </textarea>
       </label>
@@ -101,5 +116,6 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <script  src="js/index.js"></script>
+  </div>
   </body>
 </html>
