@@ -44,9 +44,12 @@
      <label   >
         <h3>Would you recommend freeCodeCamp to a friend?</h3> 
         <br>
-        <input name="recommendation" type="radio" value="Definitely">Definitely</input>
-        <input  name="recommendation" type="radio" value="Maybe">Maybe</input>
-        <input  name="recommendation" type="radio" value="Not sure">Not sure</input>
+        <input class ="option_button" name="recommendation" type="radio" value="Definitely">Definitely</input>
+        <br>
+        <input  class ="option_button" name="recommendation" type="radio" value="Maybe">Maybe</input>
+        <br>
+        <input  class ="option_button" name="recommendation" type="radio" value="Not sure">Not sure</input>
+        <br>
       </label>
         <h3 style="margin-bottom: 15px;">
           What would you like to see improved? (Check all that apply)
@@ -104,13 +107,13 @@
         
 
        </label>
-      <label>
-        Any comments or suggestions?
-        <br>
-        <textarea placeholder="Enter your comment here..." name="comment" id="text-area">
+       
+       <label for="comment">
+          Any comments or suggestions?
+          <br>
+        </label>
+       <textarea placeholder="Enter your comment here..." name="comment" id="text-area"></textarea>
 
-        </textarea>
-      </label>
       <button id="submit" type="submit" >Submit</button>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
